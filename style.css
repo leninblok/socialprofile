@@ -1,0 +1,95 @@
+/*Mobile: 375px
+Desktop: 1440px
+=
+
+- Font size (paragraph): 14px
+- Weights: 400, 600, 700*/
+
+@font-face {
+  font-family: "Inter";
+  src: url("assets/fonts/Inter-VariableFont_slnt,wght.ttf");
+}
+
+*{box-sizing: border-box;}
+
+:root{
+  --green: hsl(75, 94%, 57%);
+  --white: hsl(0, 0%, 100%);
+  --grey-700: hsl(0, 0%, 20%);
+  --grey-800: hsl(0, 0%, 12%);
+  --grey-900: hsl(0, 0%, 8%);
+}
+
+body{ 
+  font-size: 14px; 
+  font-family:"Inter";
+  font-weight: 400;
+  background-color: var(--grey-900);
+  margin: 7.5em 0 7.5em 0;
+  color: var(--white);
+  
+  @media screen and (max-width: 768px) {}
+}
+
+p{
+	text-align: center;
+}
+
+h1{
+	font-size: 2em;
+	font-weight: 600;
+	text-align: center;
+	line-height: 1em;
+}
+
+h2{
+	font-size: 1em;
+	font-weight: 700;
+	text-align: center;
+	line-height: 1em;
+	color: var(--green);
+}
+
+a{
+	background-color: var(--grey-700);
+	padding: 1em 0 1em 0;
+	text-align: center;
+	font-weight: 600;
+	border-radius: .5em;
+	transition: background-color .25s ease;
+}
+
+a:not(:last-child){
+	margin-bottom: 1em;
+}
+
+a:hover{
+	background-color: var(--green);
+	color: var(--grey-900);
+	transition: background-color 0s ease;
+}
+
+.link-container{
+	display: flex;
+	flex-flow: column wrap;
+}
+
+.profilecard{
+	width: 375px;
+	margin: auto;
+	background-color: var(--grey-800);
+	border-radius: 1em;
+	padding: 3em;
+}
+
+.avatar{
+	border-radius: 50%;
+	overflow: hidden;
+	width: 100px;
+	height: 100px;
+	margin: auto;
+}
+
+.avatar img{
+	width: 100%;
+}
