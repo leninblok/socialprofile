@@ -25,7 +25,7 @@ body{
   font-family:"Inter";
   font-weight: 400;
   background-color: var(--grey-900);
-  margin: 7.5em 0 7.5em 0;
+  margin: 12.44em 0 0 0;
   color: var(--white);
   
   @media screen and (max-width: 768px) {}
@@ -33,13 +33,16 @@ body{
 
 p{
 	text-align: center;
+	margin-top: 0;
+	margin-bottom: 25px;
 }
 
 h1{
-	font-size: 2em;
+	font-size: 24px;
 	font-weight: 600;
 	text-align: center;
-	line-height: 1em;
+	line-height: 45px;
+	margin-bottom: 10px;
 }
 
 h2{
@@ -48,19 +51,22 @@ h2{
 	text-align: center;
 	line-height: 1em;
 	color: var(--green);
+	margin-top: 0;
+	margin-bottom: 37px;
+	line-height: 0;
 }
 
 a{
 	background-color: var(--grey-700);
 	padding: 1em 0 1em 0;
 	text-align: center;
-	font-weight: 600;
+	font-weight: 700;
 	border-radius: .5em;
 	transition: background-color .25s ease;
 }
 
 a:not(:last-child){
-	margin-bottom: 1em;
+	margin-bottom: 16px;
 }
 
 a:hover{
@@ -75,18 +81,18 @@ a:hover{
 }
 
 .profilecard{
-	width: 375px;
+	width: 384px;
 	margin: auto;
 	background-color: var(--grey-800);
 	border-radius: 1em;
-	padding: 3em;
+	padding: 40px;
 }
 
 .avatar{
 	border-radius: 50%;
 	overflow: hidden;
-	width: 100px;
-	height: 100px;
+	width: 88px;
+	height: 88px;
 	margin: auto;
 }
 
